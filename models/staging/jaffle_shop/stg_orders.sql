@@ -6,7 +6,6 @@ select
     order_date,
     status
 from {{ source('jaffle_shop', 'orders') }}
-
 )
 
 Select * from orders
